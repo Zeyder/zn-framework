@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Цифра Гаджеты</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="/1.0.0/zn-framework.min.css" rel="stylesheet"></head>
+  <body>
+      <zn-root>
+          <zn-leftbar slot="leftbar">
+            <a is="zn-link" href="/" slot="logo" block>
+              <zn-image src="http://cifra.deliveryninja.ru/static/img/logo.png?19028ec"></zn-image>
+            </a>
+            <aside is="zn-list" nav>
+              <li><a is="zn-link" href="/" color="white">Главная</a></li>
+              <li><a is="zn-link" href="/about" color="white">О нас</a></li>
+              <li dropdown>
+                <a is="zn-link" href="#" color="white">Доставка</a>
+                <nav is="zn-list" nav>
+                    <li><a is="zn-link" href="#/main" color="white">Главная</a></li>
+                    <li><a is="zn-link" href="/about" color="white">О нас</a></li>
+                </nav>
+              </li>
+            </aside>
+          </zn-leftbar>
+          <zn-topbar slot="topbar" color-icon="brand-1" color-text="black" geoposition>
+              <span is="zn-text" slot="phone">+7 (4752) 712-009</span>
+              <nav is="zn-list" slot="nav" inline>
+                  <li><a is="zn-link" href="/delivery">Доставка и оплата</a></li>
+                  <li><a is="zn-link" href="/shares">Акции</a></li>
+                  <li><a is="zn-link" href="/about">О нас</a></li>
+                  <li><a is="zn-link" href="/blog">Блог</a></li>
+              </nav>
+          </zn-topbar>
+
+          <main slot="body">
+
+            <section is="zn-block" fullscreen>
+              <div is="zn-background" size="cover" background-image="http://cifra.deliveryninja.ru/static/img/intro-bg.jpg?2d1cbce" no-repeat></div>
+              <div is="zn-container">
+                <div is="zn-grids" align="center" high>
+                  <hgroup>
+                    <h1 is="zn-text" size="lg" color="brand-1"><b>Гаджеты и подарки <br> для вас</b></h1>
+                    <p is="zn-text" size="h1" opacity="8" color="black"><b>и ваших близких</b></p>
+                    <button is="zn-button" size="lg" color="brand-1" @click="scrollTo('#catalog')"><b>Каталог товаров</b></button>
+                  </hgroup>
+                </div>
+              </div>
+            </section>
+
+            <section is="zn-block">
+              <div is="zn-container">
+                <div is="zn-grids" align="top" justify="center" high>
+                  <figure is="zn-grid" mobile="12" tablet="6" desktop="3" laptop="3" fhd="3">
+                    <center>
+                        <p is="zn-text"><zn-image src="http://cifra.deliveryninja.ru/static/img/intro-icon-1.svg?3d5bf48"></zn-image></p>
+                        <figcaption is="zn-text" size="h4" color="brand-1"><b>Уникальный формат</b></figcaption>
+                        <p is="zn-text">Интересные гаджеты и идеи <br> для подарков</p>
+                    </center>
+                  </figure>
+                  <figure is="zn-grid" mobile="12" tablet="6" desktop="3" laptop="3" fhd="3">
+                    <center>
+                        <p is="zn-text"><zn-image src="http://cifra.deliveryninja.ru/static/img/intro-icon-2.svg?fb3984c"></zn-image></p>
+                        <figcaption is="zn-text" size="h4" color="brand-1"><b>Высокий уровень сервиса</b></figcaption>
+                        <p is="zn-text">Крутая команда продавцов и <br> клиентоориентированный подход</p>
+                    </center>
+                  </figure>
+                  <figure is="zn-grid" mobile="12" tablet="6" desktop="3" laptop="3" fhd="3">
+                    <center>
+                        <p is="zn-text"><zn-image src="http://cifra.deliveryninja.ru/static/img/intro-icon-3.svg?13c3c37"></zn-image></p>
+                        <figcaption is="zn-text" size="h4" color="brand-1"><b>Выгодные предложения</b></figcaption>
+                        <p is="zn-text">Постоянные акции, бонусы <br> и скидки</p>
+                    </center>
+                  </figure>
+                  <figure is="zn-grid" mobile="12" tablet="6" desktop="3" laptop="3" fhd="3">
+                    <center>
+                        <p is="zn-text"><zn-image src="http://cifra.deliveryninja.ru/static/img/intro-icon-4.svg?dbc8047"></zn-image></p>
+                        <figcaption is="zn-text" size="h4" color="brand-1"><b>Реальная гарантия</b></figcaption>
+                        <p is="zn-text">Свой сервисный центр</p>
+                    </center>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <section is="zn-block">
+              <div is="zn-background" size="cover" no-repeat background-image="http://cifra.deliveryninja.ru/static/img/shares-bg.jpg?8011756" background-color="#3d9b54"></div>
+              <div is="zn-container">
+                <center><h2 is="zn-text" size="h1" color="white"><b>Акции</b></h2></center>
+              </div>
+            </section>
+
+            <section is="zn-block" id="catalog">
+              <div is="zn-container">
+                <h2 is="zn-text" size="h1"><b>Каталог товаров</b></h2>
+              </div>
+            </section>
+
+          </main>
+
+          <footer slot="footer">
+            <div is="zn-block">
+                <div is="zn-background" background-color="#3d9b54"></div>
+                <div is="zn-container"></div>
+            </div>
+            <div is="zn-block">
+                <div is="zn-container">
+                    <div is="zn-grids" align="top" justify="between" high>
+                      <div is="zn-grid" size="3"><zn-image src="http://cifra.deliveryninja.ru/static/img/logo.png?19028ec" lazy></zn-image></div>
+                      <div is="zn-grid">
+                        <i is="zn-icon" size="16" name="phone" color="brand-1"></i>
+                        <div is="zn-text" size="h4"><zn-link href="tel:+88003331659">+8 800 333 1659</zn-link></div>
+                        <div is="zn-text" opacity="9">Звонок по России</div>
+                      </div>
+                      <div is="zn-grid">
+                        <i is="zn-icon" size="18" name="clock" color="brand-1"></i>
+                        <div is="zn-text" size="h4">9:00 - 22:00</div>
+                        <div is="zn-text" opacity="9">Без выходных</div>
+                      </div>
+                      <div is="zn-grid">
+                        <i is="zn-icon" size="18" name="clock" color="brand-1"></i>
+                        <div is="zn-text" size="h4">11:00 - 22:30</div>
+                        <div is="zn-text" opacity="9">Пятница и суббота</div>
+                      </div>
+                      <div is="zn-grid">
+                        <i is="zn-icon" size="18" name="pin" color="brand-1"></i>
+                        <address is="zn-text">г.Улан-Удэ, <br> ул. Ключевская, 76а, <br> офис 5</address>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div is="zn-text" size="h6" align="center" opacity="9">Разработка решения – веб-студия <a is="zn-link" href="//garantpark.com">«ГарантПарк»</a></div>
+          </footer>
+
+      </zn-root>
+  <script type="text/javascript" src="/1.0.0/zn-framework.min.js"></script></body>
+</html>
