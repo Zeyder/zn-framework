@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <base href="https://zeyder.github.io/zn-framework/">
     <meta charset="utf-8">
     <title>Цифра Гаджеты</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://zeyder.github.io/zn-framework/1.0.0/zn-framework.min.css" rel="stylesheet"></head>
+  <link href="/1.0.0/zn-framework.min.css" rel="stylesheet"></head>
   <body>
       <zn-root>
           <zn-leftbar slot="leftbar">
@@ -110,23 +109,63 @@
                     <div is="zn-grids" align="top" justify="between" high>
                       <div is="zn-grid" size="3"><zn-image src="http://cifra.deliveryninja.ru/static/img/logo.png?19028ec" lazy></zn-image></div>
                       <div is="zn-grid">
-                        <i is="zn-icon" size="16" name="phone" color="brand-1"></i>
-                        <div is="zn-text" size="h4"><zn-link href="tel:+88003331659">+8 800 333 1659</zn-link></div>
-                        <div is="zn-text" opacity="9">Звонок по России</div>
+                        <div is="zn-row">
+                          <div is="zn-grids">
+                            <div is="zn-grid">
+                              <i is="zn-icon" size="16" name="phone" color="brand-1"></i>
+                            </div>
+                            <div is="zn-grid">
+                              <div is="zn-row">
+                                <div is="zn-text" size="h4"><zn-link href="tel:+88003331659">+8 800 333 1659</zn-link></div>
+                                <div is="zn-text" opacity="9">Звонок по России</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div is="zn-grid">
-                        <i is="zn-icon" size="18" name="clock" color="brand-1"></i>
-                        <div is="zn-text" size="h4">9:00 - 22:00</div>
-                        <div is="zn-text" opacity="9">Без выходных</div>
+                        <div is="zn-row">
+                          <div is="zn-grids">
+                            <div is="zn-grid">
+                              <i is="zn-icon" size="18" name="clock" color="brand-1"></i>
+                            </div>
+                            <div is="zn-grid">
+                              <div is="zn-row">
+                                <div is="zn-text" size="h4">9:00 - 22:00</div>
+                                <div is="zn-text" opacity="9">Без выходных</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div is="zn-grid">
-                        <i is="zn-icon" size="18" name="clock" color="brand-1"></i>
-                        <div is="zn-text" size="h4">11:00 - 22:30</div>
-                        <div is="zn-text" opacity="9">Пятница и суббота</div>
+                        <div is="zn-row">
+                          <div is="zn-grids">
+                            <div is="zn-grid">
+                              <i is="zn-icon" size="18" name="clock" color="brand-1"></i>
+                            </div>
+                            <div is="zn-grid">
+                              <div is="zn-row">
+                                <div is="zn-text" size="h4">11:00 - 22:30</div>
+                                <div is="zn-text" opacity="9">Пятница и суббота</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div is="zn-grid">
-                        <i is="zn-icon" size="18" name="pin" color="brand-1"></i>
-                        <address is="zn-text">г.Улан-Удэ, <br> ул. Ключевская, 76а, <br> офис 5</address>
+                          <div is="zn-row">
+                            <div is="zn-grids">
+                              <div is="zn-grid">
+                                <i is="zn-icon" size="18" name="pin" color="brand-1"></i>
+                              </div>
+                              <div is="zn-grid">
+                                <div is="zn-row">
+                                  <address is="zn-text">г.Улан-Удэ, <br> ул. Ключевская, 76а, <br> офис 5</address>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
                 </div>
@@ -135,5 +174,5 @@
           </footer>
 
       </zn-root>
-  <script type="text/javascript" src="https://zeyder.github.io/zn-framework/1.0.0/zn-framework.min.js"></script></body>
+  <script type="text/javascript" src="/1.0.0/zn-framework.min.js"></script></body>
 </html>
